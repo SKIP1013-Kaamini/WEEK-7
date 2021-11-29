@@ -1,0 +1,57 @@
+package CLASS;
+import java.util.Scanner;
+class Exercise5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//guna scanner, mintak client masukkan pswd
+		//sistem akan semak pswd
+		//Jika betul, keluar dari loop
+		//jika pswd salah, masukkan sekali lagi pswd
+		//kali ketiga, keluar dari loop dan bagi mesej, kad is invalid
+		
+		
+		Scanner scan = new Scanner (System.in);
+		
+		int password = 5868;
+		int number = 1 ;
+		
+		
+		System.out.println("This is a password system");
+		System.out.println("Please enter your password :");
+		password = scan.nextInt();
+		 
+		if(password == 5868)
+	            System.out.println("Welcome! You're in.");
+	        
+	        else {
+	            do {
+	            if (password !=5868) {
+	                System.out.println("Enter your password : ");
+	                password = scan.nextInt();
+	            }
+	            
+	            number ++;
+	            }
+	            while(number<3); 
+	            
+	            System.out.println("Invalid card!!!");
+	            
+	        }
+	            
+		}        
+	            
+	        
+	}        
+			
+	
+		
+		
+		
+		
+		
+
+	
+
+
